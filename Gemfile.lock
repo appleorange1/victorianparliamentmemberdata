@@ -10,6 +10,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    csv_to_popolo (0.28.0)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
     http-cookie (1.0.2)
