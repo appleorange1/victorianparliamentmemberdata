@@ -1,0 +1,117 @@
+0.28.0 2016-12-12
+  - The "source" column now creates Membership data, not Person data.
+
+0.27.1 2016-10-13
+  - Bug fix to handle whitespace around URL separator.
+
+0.27.0 2016-10-04
+  - Split URL only if separator is followed by 'http'
+
+0.26.1 2016-08-12
+  - Don't create blank Posts
+
+0.26.0 2016-07-26
+  - Remove 'mailto:' from beginning of email addresses
+
+0.25.0  2016-05-20
+  - Switch to Rcsv (which is bindings to libcsv) to make parsing CSVs faster.
+
+0.24.0  2016-05-18
+  - Ensure multi-value fields don't contain duplicate values
+
+0.23.0  2016-04-15
+  - Allow multilingual names fields to also be multi-value
+
+0.22.0  2016-04-11
+  - Create Posts when given a legislative_membership_type
+
+0.21.0  2016-03-21
+  - Allow for multi-value fields (thanks @mhl)
+
+0.20.0  2016-03-15
+  - Make the 'facebook' column have a consistent format
+
+0.19.0  2016-02-19
+  - Handle empty Wikipedia links and images better
+
+0.18.0  2016-01-11
+  - Transform a 'twitter' column (in multiple possible formats) into a
+    standardised entry in both contact_details and links
+
+0.17.1  2016-01-07
+  - Skip alternate names that are blank
+
+0.17.0  2015-12-16
+  - Accept a semi-colon separated list of 'alternate_names'
+
+0.16.0  2015-11-26
+  - combine data from multiple incoming Person records (first field
+    wins)
+
+0.15.0  2015-11-03
+  - don't prepend person IDs with "person/"
+
+0.14.0  2015-10-23
+  - transform wikipedia__{code} columns into Person:Links 
+
+0.13.0  2015-09-24
+  - accept foreign language names as 'name__XX'
+
+0.12.0  2015-09-06
+  - constituencies are now first class Areas, rather than embedded on
+    the Memberships
+
+0.11.0  2015-09-06
+  - terms are now first class Events, rather than embedded on the
+    legislature organization
+
+0.10.1  2015-08-11
+  - Allow multiple Organizations with the same name, as long as they
+    have different `organization_id`s
+
+0.10.0  2015-08-06
+  - Turn any `identifier__xxx` column into an Identifier
+
+0.9.8  2015-06-25
+  - Accept `area_id` columns
+
+0.9.7  2015-06-18
+  - Default an empty Party name to "Unknown"
+
+0.9.6  2015-06-18
+  - Derive IDs from names, for persistence, rather than generating UUIDs
+
+0.9.5  2015-06-17
+  - Ensure Person records are unique
+
+0.9.3  2015-05-25
+  -  Allow a `source` column
+  -  Allow `party_name` as alias for `party`
+  -  Skip blank `executive` entries
+
+0.9.2  2015-05-24
+  -  Allow `photograph` as alias for `image`
+
+0.9.1  2015-05-07
+  -  Allow `name_en` as an alias for `name`, as a first step towards
+     better handling of multi-lingual data
+
+0.9.0  2015-05-03
+  - Prefix bare personIDs with 'person/'  
+
+0.8.4  2015-05-01
+  - Cope with blank column names
+
+0.8.3  2015-05-01
+  - Warn about duplicated column names
+
+0.8.2  2015-05-01
+  - Add aliases for district, place, mob, cellphone, date_of_death, dod,
+    sex, patronym, patronymic, site
+
+0.8.1  2015-04-23
+  - Accept a `term` 
+
+
+
+

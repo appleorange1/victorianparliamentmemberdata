@@ -1,3 +1,12 @@
+PATH
+  remote: .
+  specs:
+    csv_to_popolo (0.28.0)
+      facebook_username_extractor
+      json
+      rcsv
+      twitter_username_extractor
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -34,15 +43,12 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.6)
-  facebook_username_extractor
-  json
+  csv_to_popolo!
   json-schema (~> 2.0.0)
   minitest
   pry
   rake
-  rcsv
   rubocop (~> 0.42.0)
-  twitter_username_extractor
 
 BUNDLED WITH
    1.13.6
